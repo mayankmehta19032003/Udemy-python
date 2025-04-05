@@ -1,5 +1,7 @@
-score = 0
-is_Winning = True
-height = 1.6
+print("Welcome to rollercoster")
+height = int(input("What is your height?"))
 
-print(f"Your score is: {score} and your height is : {height} and you are winning : {is_Winning}")
+if height > 120 :
+    print("You are elibile")
+else :
+    print("NO")
