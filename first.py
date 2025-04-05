@@ -1,7 +1,5 @@
-bill = input("What was the total bill? $ ")
-tip = input("How much tip would you like to give? 10, 12, or 15?")
-people = input("How many people to split the bill? ")
+score = 0
+is_Winning = True
+height = 1.6
 
-totalAmt = float(bill) + float(tip)
-eachPay = totalAmt / float(people)
-print("Each person should pay: $ " , float(eachPay))
+print(f"Your score is: {score} and your height is : {height} and you are winning : {is_Winning}")
