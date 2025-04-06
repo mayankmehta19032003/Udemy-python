@@ -1,27 +1,11 @@
 #randomisation
-import random
+# import random
 
-print(random.randint(1,20))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# number= random.randint(1,2)
+# if(number == 1):
+#     print("Heads")
+# else:
+#     print("Tails")
 
 #  print("Welcome to Pizza shop")
 
