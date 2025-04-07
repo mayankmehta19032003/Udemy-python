@@ -18,13 +18,20 @@ print('''
 print("Word to guess: " + '_' * random_word_length)
 
 
+lives =6
 
-for i in range(1,7):
+for i in range(100):
+    
     guessed_letter = input("Guess a letter: ")
-
+   
     if guessed_letter in random_word:
-        print("****************************6/6 LIVES LEFT****************************")
         print("Word to guess: " + '_' * random_word_length)
+        print(f"****************************{lives}/6 LIVES LEFT****************************")
     else:
+        lives -= 1
         print(f"You guessed {guessed_letter}, that's not in the word. You lose a life.")
-        print(f"****************************6/6 LIVES LEFT****************************")
+        if lives == 0:
+            print("***********************IT WAS funny! YOU LOSE**********************")
+            break
+        else:
+            print(f"****************************{lives}/6 LIVES LEFT****************************")
