@@ -1,0 +1,22 @@
+word_list = [
+    "Messi",
+    "Ronaldo",
+    "Neymar",
+    "Mbappe",
+    "Haaland",
+    "Modric",
+    "Salah",
+    "Kaka",
+    "Zidane",
+    "Pele",
+    "Maradona",
+    "Vinicius",
+    "Griezmann",
+    "Casemiro",
+    "Firmino",
+    "Alisson",
+    "Figo",
+    "Pogba",
+    "Dybala",
+    "Zlatan"
+]

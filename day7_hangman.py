@@ -1,4 +1,5 @@
 import random
+from hangman_words import word_list
 
 word_list = ["ronaldo", "mbappe", "levandoski"]
 random_word = random.choice(word_list)
