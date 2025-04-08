@@ -1,6 +1,6 @@
 import random
 
-word_list = ["mouse","alt","lenovokawasaki"]
+word_list = ["ronaldo","mbappe","levandoski"]
 
 random_word = random.choice(word_list)
 random_word_length = len(random_word)
@@ -13,15 +13,16 @@ print('''
 | | | | (_| | | | | (_| | | | | | | (_| | | | |
 |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     __/ |                      
-                   |___/''')
+                   |___/  
+    ''')
 
-print("Word to guess: " + '_' * random_word_length)
+
 
 
 lives =6
 
 for i in range(100):
-    
+    print("Word to guess: " + '_' * random_word_length)
     guessed_letter = input("Guess a letter: ")
    
     if guessed_letter in random_word:
