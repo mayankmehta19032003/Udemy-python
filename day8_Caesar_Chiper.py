@@ -8,8 +8,31 @@ print('''
 | |__| (_| |  __/\__ \ (_| | |    | |___| | |_) | | | |  __/ |   
  \____\__,_|\___||___/\__,_|_|     \____|_| .__/|_| |_|\___|_|   
                                           |_|                    
-      ''')
+''')
 
+# 🔒 Encode function
+def encode(text, shift):
+    result = ""
+    for letter in text:
+        if letter in alphabets:
+            index = alphabets.index(letter)
+            result += alphabets[(index + shift) % 26]
+        else:
+            result += letter
+    return result
+
+# 🔓 Decode function
+def decode(text, shift):
+    result = ""
+    for letter in text:
+        if letter in alphabets:
+            index = alphabets.index(letter)
+            result += alphabets[(index - shift) % 26]
+        else:
+            result += letter
+    return result
+
+# 🔁 Main loop
 should_continue = True
 
 while should_continue:
@@ -17,23 +40,11 @@ while should_continue:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-    result = ""
-
     if direction == "encode":
-        for letter in text:
-            if letter in alphabets:
-                index = alphabets.index(letter)
-                result += alphabets[(index + shift) % 26]
-            else:
-                result += letter
+        result = encode(text, shift)
         print(f"Here's the encoded result: {result}")
     elif direction == "decode":
-        for letter in text:
-            if letter in alphabets:
-                index = alphabets.index(letter)
-                result += alphabets[(index - shift) % 26]
-            else:
-                result += letter
+        result = decode(text, shift)
         print(f"Here's the decoded result: {result}")
     else:
         print("Invalid option. Please choose 'encode' or 'decode'.")
@@ -42,4 +53,3 @@ while should_continue:
     if more != "yes":
         should_continue = False
         print("Goodbye")
-
