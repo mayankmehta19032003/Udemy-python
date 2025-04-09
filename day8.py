@@ -1,6 +1,4 @@
-def greet():
-    print("Hello")
-    print("Hello my name")
-    print("Hello my name is Mayank")
+def greet(name,location):
+    print(f"Hello my name is {name} meet me here in {location}")
 
-greet()
+greet("shayam","mahaveer nagar")
