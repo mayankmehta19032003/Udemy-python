@@ -1,3 +1,5 @@
+import os
+
 print('''
 ___________
  /          \\
@@ -22,7 +24,7 @@ while should_continue == True:
 
     choice = input("Are there any other bidders? Type 'yes or 'no'. ").lower()
     if choice == "yes":
-        print("\n" * 50)
+        os.system('cls' if os.name == 'nt' else 'clear')
         continue
     elif choice == "no":
         maxi = 0
