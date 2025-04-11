@@ -1,8 +1,21 @@
-# functions with output
-def format_name(f_name,l_name):
-    first_name = f_name.title()
-    last_name = l_name.title()
+def add(n1,n2):
+    return n1+n2
 
-    print(first_name + last_name)
+def subtract(n1,n2):
+    return n1-n2
 
-format_name("maYANk","MEhta")
+def multiply(n1,n2):
+    return n1*n2
+
+def divide(n1,n2):
+    return n1/n2
+
+
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide,
+}
+
+print(operations["*"](4,8))
