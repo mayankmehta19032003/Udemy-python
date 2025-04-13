@@ -1,5 +1,12 @@
 import random
-
+print('''
+  ________                              
+ /  _____/ __ __   ____   ______ ______ 
+/   \  ___|  |  \_/ __ \ /  ___//  ___/ 
+\    \_\  \  |  /\  ___/ \___ \ \___ \  
+ \______  /____/  \___  >____  >____  > 
+        \/            \/     \/     \/  
+''')
 print("Welcome to the Number Guessing Game! \nI'm thinking of a number between 1 and 100.")
 
 dificulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
