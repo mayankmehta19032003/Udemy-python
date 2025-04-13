@@ -22,6 +22,8 @@ if dificulty == "easy":
         else:
             print("Too High.")
             easy -= 1
+        if easy == 0:
+            print("You've run out of guesses. Refresh the page to run again.")
 else:
     while hard > 0:
         print(f"You have {hard} attempts remaining to guess the number.")
@@ -35,3 +37,5 @@ else:
         else:
             print("Too High.")
             hard -= 1
+        if hard == 0:
+            print("You've run out of guesses. Refresh the page to run again.")
