@@ -8,9 +8,9 @@
 #         temp = int(row[1])
 #         temperature.append(temp)
 #     print(temperature)
-# import pandas
+import pandas
 
-# data = pandas.read_csv("weather_data.csv")
+data = pandas.read_csv("weather_data.csv")
 
 # data_dict = data.to_dict()
 # # print(data_dict)
@@ -19,5 +19,5 @@
 # # average =sum(temp_list)/len(temp_list)
 
 # # print(average)
-
-# print(data["temp"].max())
+max_temp = data["temp"].max()
+print(data[data.temp == max_temp ])
