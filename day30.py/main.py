@@ -5,6 +5,7 @@ except FileNotFoundError as error:
     file = open("text.txt","w")
 else:
     content = file.read()
+    print(content)
 finally:
     file.close()
     print("file is closed")
