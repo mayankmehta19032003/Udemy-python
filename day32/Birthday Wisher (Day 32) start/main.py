@@ -14,4 +14,4 @@
 # connection.close()
 import datetime as dt
 time =dt.datetime.now()
-print(time)
+print(time.weekday())
