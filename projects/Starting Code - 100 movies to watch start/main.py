@@ -9,10 +9,10 @@ soup = BeautifulSoup(response.text, "html.parser")
 titles = soup.find_all("h3", class_="title")
 
 with open("movies.txt", "w", encoding="utf-8") as file:
-    for title in titles:
+    for title in titles[::-1]: 
         movie_title = title.get_text()
         file.write(f"{movie_title}\n")
-        print(title)
-    
+        print(movie_title)
+
 
 
